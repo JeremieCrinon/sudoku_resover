@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#sudoku{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px auto;
+}
+
+#sudoku input{
+    width: calc(100% / 9);
+    aspect-ratio: 1/ 1;
+    text-align: center;
+    font-size: 24px;
+}
+
+#solve{
+    width: 20%;
+    height: 50px;
+    font-size: 24px;
+    margin: 40px 0;
+    border: none;
+    box-shadow: 2px 2px 2px 2px #555;
+    margin-left: 40%;
+}
+
+
+/* Square-1 to Sqaure-9 are blank with slighty theses colors : blue, green, pink, red, violet, orange, gray, white, yellow  */
+.square-1{
+    background-color: #AAF;
+}
+
+.square-2{
+    background-color: #AFA;
+}
+
+.square-3{
+    background-color: #FAA;
+}
+
+.square-4{
+    background-color: #FAF;
+}
+
+.square-5{
+    background-color: #F0F;
+}
+
+.square-6{
+    background-color: #FFA;
+}
+
+.square-7{
+    background-color: #AAA;
+}
+
+.square-8{
+    background-color: #FFF;
+}
+
+.square-9{
+    background-color: #FF0;
+}
