@@ -1,8 +1,14 @@
 const solve = document.getElementById('solve');
+const txt_grid = document.getElementById('txt_grid');
 
 solve.addEventListener('click', () => {
     solve.style.pointerEvents = "none";
-    solveGrid();
+    if (solveGrid()){
+        txt_grid.textContent = "Grille résolue";
+    } else {
+        txt_grid.textContent = "Grille impossible, veuillez corriger!";
+        solve.style.pointerEvents = "auto";
+    }
 });
 
 
